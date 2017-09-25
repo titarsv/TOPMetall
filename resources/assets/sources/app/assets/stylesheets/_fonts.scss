@@ -1,0 +1,5 @@
+@import 'mixin';
+
+@include font-face("HelveticaNeue", "../fonts/HelveticaNeueLTW1G-Th/HelveticaNeueLTW1G-Th");
+@include font-face("HelveticaNeue", "../fonts/HelveticaNeueLTW1G-Blk/HelveticaNeueLTW1G-Blk", 900);
+@include font-face("icons", "../fonts/icons/icons");

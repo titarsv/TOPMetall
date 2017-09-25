@@ -1,0 +1,220 @@
+@import 'mixin';
+
+.header{
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+	border: 2px solid $bg-dark;
+}
+
+.top-line{
+	padding: 10px 0;
+	background-color: $bg;
+}
+
+span.accent{
+	color: $accent;
+}
+
+.col-center{
+	text-align: center;
+}
+
+.col-right{
+	text-align: right;
+	@include bp(sm){
+		text-align: center;
+	}
+}
+
+.logo{
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	&:hover,
+	&:focus{
+		color: #000;
+	}
+}
+
+.logo__top{
+	white-space: nowrap;
+	font-size: 44px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000;
+	margin-bottom: 3px;
+	span{
+		display: inline-block;
+		font-weight: 900;
+		margin-right: 5px;
+	}
+}
+
+.btn{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	background-color: $accent;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 16px;
+	font-weight: 900;
+	border-radius: 0;
+	padding: 0 20px;
+	&:hover,
+	&:focus{
+		color: #fff;
+		background-color: $accent-dark;
+	}
+	&_white{
+		border: 2px solid $accent;
+		background-color: #fff;
+		color: $accent;
+		&:hover,
+		&:focus{
+			background-color: $accent;
+			color: #fff;
+		}
+	}
+}
+
+.header__btn{
+	margin-top: 12px;
+}
+
+.search-form{
+	position: relative;
+	padding-top: 28px;
+	.input{
+		padding-right: 67px;
+	}
+	.btn{
+		width: 50px;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		font-size: 22px;
+		line-height: 48px;
+		font-weight: normal;
+	}
+}
+
+.input{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	background-color: $bg;
+	padding: 0 20px;
+	&:focus{
+		background-color: $bg-dark;
+	}
+}
+
+.advantages{
+	padding: 121px 0 112px;
+	position: relative;
+	@include bp(lg){
+		padding: 30px 0;
+	} 
+}
+
+.advantages-list{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	@include bp(lg){
+		display: flex;
+		justify-content: space-between;
+	} 
+	@include bp(sm){
+		display: block;
+	} 
+}
+
+.advantages-item{
+	float: left;
+	display: flex;
+	align-items: center;
+	height: 170px;
+	width: 220px;
+	border: 1px solid $bg-dark;
+	background-color: $bg;
+	font-weight: 900;
+	padding-left: 14px;
+	padding-right: 5px;
+	margin-right: 15px;
+	@include bp(lg){
+		float: none;
+		margin: 0;
+	} 
+	@include bp(sm){
+		width: 100%;
+		margin-bottom: 15px;
+		height: 80px;
+		padding: 0 15px;
+	} 
+	i{
+		font-weight: normal;
+		color: $accent;
+		font-size: 34px;
+		margin-right: 10px;
+	}
+}
+
+.header-product{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -55px;
+	@include bp(lg){
+		position: static;
+		display: block;
+		margin: 0 auto;
+		transform: none; 
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+.product-header{
+	padding-bottom: 43px;
+}
+
+.header-select{
+	padding-top: 22px;
+	@include bp(sm){
+		text-align: center;
+	}
+	.fancyselect{
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+	.selecttext{
+		font-family: $default-font;
+		font-size: 18px;
+		border-bottom: 1px dashed $accent;
+		padding: 0;
+		margin-left: 14px;
+	}
+	.arrows{
+		background: url('../images/select-arr.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		left: 0px;
+	}
+	.sort-list{
+		font-size: 18px;
+		font-family: $default-font;
+		background-color: transparent;
+		option{
+			background-color: $bg;
+			border: none;
+			outline: none;
+		}
+	}
+}

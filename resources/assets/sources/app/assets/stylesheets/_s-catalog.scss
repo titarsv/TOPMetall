@@ -1,0 +1,154 @@
+.catalog{
+	
+}
+
+.section-title{
+	font-size: 40px;
+	position: relative;
+	padding: 29px 0;
+	&:before{
+		content: '';
+		display: block;
+		width: 71px;
+		height: 1px;
+		background-color: $accent;
+		position: absolute;
+		left: 2px;
+		bottom: 22px;
+	}
+	span{
+		font-weight: 900;
+	}
+}
+
+.catalog-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border-top: 1px solid $bg-dark;
+}
+
+.catalog-item{
+	background-color: $bg;
+	border-bottom: 1px solid $bg-dark;
+	font-weight: 900;
+	cursor: pointer;
+	&:hover{
+		background-color: $bg-dark;
+	}
+	&.active{
+		color: #fff;
+		.catalog-item__right{
+			color: #fff;
+		}
+	}
+	&:nth-child(1){
+		&.active{
+			background-image: url('../images/catalog_1.jpg');
+		}
+	}
+	&:nth-child(2){
+		&.active{
+			background-image: url('../images/catalog_2.jpg');
+		}
+	}
+	&:nth-child(3){
+		&.active{
+			background-image: url('../images/catalog_3.jpg');
+		}
+	}
+	&:nth-child(4){
+		&.active{
+			background-image: url('../images/catalog_4.jpg');
+		}
+	}
+	&:nth-child(5){
+		&.active{
+			background-image: url('../images/catalog_5.jpg');
+		}
+	}
+	&:nth-child(6){
+		&.active{
+			background-image: url('../images/catalog_6.jpg');
+		}
+	}
+	&:nth-child(7){
+		&.active{
+			background-image: url('../images/catalog_7.jpg');
+		}
+	}
+	&:nth-child(8){
+		&.active{
+			background-image: url('../images/catalog_8.jpg');
+		}
+	}
+	&:nth-child(9){
+		&.active{
+			background-image: url('../images/catalog_9.jpg');
+		}
+	}
+	&:nth-child(10){
+		&.active{
+			background-image: url('../images/catalog_10.jpg');
+		}
+	}
+	&:nth-child(11){
+		&.active{
+			background-image: url('../images/catalog_11.jpg');
+		}
+	}
+}
+
+.catalog-item__name{
+	display: inline-block;
+	padding: 30px 0 30px 21px;
+	background-size: cover;
+	&:before{
+		content: '';
+		display: inline-block;
+		height: 8px;
+		width: 8px;
+		background-color: $accent;
+		vertical-align: middle;
+		margin-right: 5px;
+		margin-top: -3px;
+	}
+}
+
+.catalog-item__right{
+	float: right;
+	padding: 30px 0;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 18px;
+	color: transparent;
+}
+
+.catalog-submnu{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.catalog-submnu__item{
+	a{
+		display: block;
+		border-bottom: 1px solid $bg-dark;
+		font-weight: normal;
+		color: #000;
+		padding: 15px 0;
+		background-color: #fff;
+		.container{
+			padding-left: 52px;
+		}
+		span{
+			float: right;
+			color: #fff;
+		}
+		&:hover{
+			background-color: $accent;
+			color: #fff;
+		}
+	}
+}
